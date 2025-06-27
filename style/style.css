@@ -15,7 +15,7 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 .container {
-    max-width: 100%;
+    max-width: 95%;
     margin: auto;
 }
 
