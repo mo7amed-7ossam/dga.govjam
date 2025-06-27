@@ -427,7 +427,7 @@ main .banner .btn {
 @media (min-width: 0px) and (max-width: 800px) {
     main {
         display: flex;
-        background-position: 14% center;
+        background-position: 18% center;
     }
 
     main .banner {
