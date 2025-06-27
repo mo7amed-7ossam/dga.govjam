@@ -235,7 +235,7 @@ nav .container .mobile-nav-slider.active {
 
 
 nav .container .mobile-nav-slider .container {
-    padding: 5% 20px;
+    padding: 5% 0px;
 }
 
 nav .container .mobile-nav-slider .mobile-nav-header {
@@ -389,7 +389,6 @@ main .banner {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    display:none;
 }
 
 
@@ -420,4 +419,82 @@ main .banner .btn {
     width: fit-content;
     display: block;
     margin-top: 5px !important;
+}
+
+/* main responsive */
+
+
+@media (min-width: 0px) and (max-width: 800px) {
+    main {
+        display: flex;
+        background-position: 14% center;
+    }
+
+    main .banner {
+        height: auto;
+        margin-top: auto;
+        margin-bottom: 5%;
+    }
+
+    main .banner .title {
+        font-size: 36px;
+        margin-bottom: 0px;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    main .banner .subtitle {
+        width: 90%;
+        margin: auto;
+        line-height: 30px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    main .banner .date {
+        margin: auto;
+        margin-bottom: 12px;
+    }
+
+    main .banner .btn {
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    main {
+        display: flex;
+        background-position: 6% center;
+    }
+
+    main .banner {
+        height: auto;
+        margin-top: auto;
+        margin-bottom: 3%;
+    }
+
+    main .banner .title {
+        font-size: 45px;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    main .banner .subtitle {
+        width: 50%;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1010px) and (max-width: 1205px) {
+    main .banner .title {
+        font-size: 45px;
+    }
+
+    main .banner .subtitle {
+        width: 50%;
+    }
+
 }
