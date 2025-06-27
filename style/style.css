@@ -427,7 +427,8 @@ main .banner .btn {
 @media (min-width: 0px) and (max-width: 800px) {
     main {
         display: flex;
-        background-position: 18% center;
+        background-position: center;
+        background-image: url(../imgs/banner-govjam-mobile.png);
     }
 
     main .banner {
@@ -462,7 +463,6 @@ main .banner .btn {
         margin: auto;
         padding-bottom: 2px;
     }
-
 }
 
 @media (min-width: 800px) and (max-width: 1000px) {
@@ -479,7 +479,6 @@ main .banner .btn {
 
     main .banner .title {
         font-size: 45px;
-        /* text-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
     }
 
     main .banner .subtitle {
@@ -487,7 +486,6 @@ main .banner .btn {
         line-height: 30px;
         margin-bottom: 30px;
     }
-
 }
 
 @media (min-width: 1000px) and (max-width: 1205px) {
@@ -498,5 +496,126 @@ main .banner .btn {
     main .banner .subtitle {
         width: 50%;
     }
+}
 
+/* hero-info */
+
+.hero-info {
+    padding: 32px 0px;
+}
+
+.hero-info .hero-info-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #D2D6DB;
+    background-color: rgba(42, 32, 106, 0.02);
+    gap: 10px;
+}
+
+.hero-info .hero-info-container .item {
+    width: calc((100% - 60px)/ 4);
+    width: calc((100% - 10px)/ 2);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-info .hero-info-container .item-title {
+    color: #6C737F;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-info .hero-info-container .item .item-content {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.hero-info .hero-info-container .item .item-content .item-info {
+    color: #2A206A;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #29b4b4;
+    color: #f0f0f0;
+    padding: 0px 14px;
+    padding-bottom: 7px;
+    border-radius: 40px;
+    width: fit-content;
+}
+
+
+/* hero-info responsive */
+
+@media (max-width: 700px) {
+    .hero-info .hero-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-info .hero-info-container .item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-info .hero-info-container .item:first-child .item-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-info .hero-info-container .item .item-content {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .hero-info .hero-info-container {
+        padding: 16px;
+    }
+
+    .hero-info .hero-info-container .item {
+        width: calc((100% - 60px)/ 2);
+    }
+
+    .hero-info .hero-info-container .item:first-child,
+    .hero-info .hero-info-container .item:nth-child(3) {
+        width: 30%;
+    }
+
+    .hero-info .hero-info-container .item:nth-child(2),
+    .hero-info .hero-info-container .item:nth-child(4) {
+        width: calc((70% - 10px));
+    }
+
+    .hero-info .hero-info-container .item .item-content {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1400px) {
+    .hero-info .hero-info-container {
+        padding: 16px;
+    }
+
+    .hero-info .hero-info-container .item {
+        width: calc((100% - 60px)/ 2);
+    }
+
+    .hero-info .hero-info-container .item:first-child,
+    .hero-info .hero-info-container .item:nth-child(3) {
+        width: 43%;
+    }
+
+    .hero-info .hero-info-container .item:nth-child(2),
+    .hero-info .hero-info-container .item:nth-child(4) {
+        width: calc((57% - 10px));
+    }
 }
