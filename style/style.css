@@ -490,7 +490,7 @@ main .banner .btn {
 
 }
 
-@media (min-width: 1010px) and (max-width: 1205px) {
+@media (min-width: 1000px) and (max-width: 1205px) {
     main .banner .title {
         font-size: 45px;
     }
