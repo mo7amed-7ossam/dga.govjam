@@ -441,6 +441,7 @@ main .banner .btn {
         margin-bottom: 0px;
         /* text-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
         text-align: center;
+        color: #fff;
     }
 
     main .banner .subtitle {
